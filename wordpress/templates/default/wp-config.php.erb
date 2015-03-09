@@ -60,6 +60,7 @@ define('FORCE_SSL_LOGIN', true);
 define('FORCE_SSL_ADMIN', true);
 <% end -%>
 
+define('DASHBOARD_URL', <%= node['wordpress']['wp_config']['dashboard_url'] %>);
 
 <% if node['wordpress']['wp_config']['dashboard_url'] ==true -%>
 /**
